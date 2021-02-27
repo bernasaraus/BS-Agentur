@@ -1,13 +1,15 @@
-.body {
+body {
     padding: 0;
     margin: 0;
-    
+    background-color: rgb(240, 240, 240);
 }
 
-@media (min-width: 600px) {
-    .gallery, figure{
-        width: 50%;
-    }
+img {
+    max-width: 100%;
+}
+
+.no-margins {
+    margin: 0;
 }
 
 .container {
@@ -17,56 +19,44 @@
     margin-right: auto;
 }
 
-body, html {
-    height: 100%;
-}
-
-/* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (p.jpg). This will make the text easier to read */
+.hero {
+  padding: 96px 0;
   background-image: linear-gradient(rgba(26, 125, 170, 0.5), rgba(165, 79, 79, 0.5));
-
-  /* Set a specific height */
-  height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-/* Place text in the middle of the image */
-.hero-text {
   text-align: center;
   font-family: monospace;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: rgb(6, 17, 20);
 }
+.hero__heading {
+    font-size: 75px;
+    margin: 0;
+    margin-bottom: 24px;
+}
+@media (max-width: 600px) {
+    .hero__heading {
+        font-size: 50px;
+    }
+}
+
 
 .gallery { 
-    display: flex; 
-    margin: auto; 
-    width: 850px; 
-    justify-content: space-between; 
-    flex-wrap: wrap; 
-} 
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    margin: 0 auto;
+}
 
-figure { 
-    width: 400px; 
-    margin: 10px 0; 
-    background-color: white; 
-    border: 9px solid; 
-} 
-
-figcaption { 
-    text-align: center; 
-    padding: 10px; 
-} 
-
+.polaroid {
+    background-color: white;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
+    padding: 24px;
+}
+.polaroid > .caption {
+    text-align: center;
+    margin-top: 8px;
+    padding: 16px;
+}
 
 .container {
     text-align: center;
