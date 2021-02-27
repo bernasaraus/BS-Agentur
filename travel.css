@@ -1,0 +1,94 @@
+.body {
+    padding: 0;
+    margin: 0;
+    
+}
+
+@media (min-width: 600px) {
+    .gallery, figure{
+        width: 50%;
+    }
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (p.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(26, 125, 170, 0.5), rgba(165, 79, 79, 0.5));
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  font-family: monospace;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(6, 17, 20);
+}
+
+.gallery { 
+    display: flex; 
+    margin: auto; 
+    width: 850px; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+} 
+
+figure { 
+    width: 400px; 
+    margin: 10px 0; 
+    background-color: white; 
+    border: 9px solid; 
+} 
+
+figcaption { 
+    text-align: center; 
+    padding: 10px; 
+} 
+
+
+.container {
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+    padding: 10px 20px;
+  }
+
+.country {
+    font-family: cursive;
+    font-size: 55px;
+    text-align: center;
+    color: #94b5c0;
+
+}
+
+.city {
+    font-family: cursive;
+    font-size: 55px;
+    text-align: center;
+    color: #62959c;
+
+}
+  
+  
