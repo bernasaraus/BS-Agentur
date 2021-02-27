@@ -44,6 +44,12 @@ img {
     grid-template-columns: 1fr 1fr;
     max-width: 900px;
     margin: 0 auto;
+    padding: 0 32px;
+}
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 }
 
 .polaroid {
@@ -54,8 +60,7 @@ img {
 }
 .polaroid > .caption {
     text-align: center;
-    margin-top: 8px;
-    padding: 16px;
+    margin-top: 12px;
 }
 
 .container {
